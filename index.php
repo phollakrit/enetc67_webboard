@@ -57,7 +57,8 @@
                 style=text-decoration:none>$row[1]</a><br>$row[3] - $row[4]</div>";
                 if(isset($_SESSION['id']) && $_SESSION['role']=='a'){
                     echo "<div class='me-2 align-self-center'><a href=delete.php?id=$row[2] 
-                    class='btn btn-danger btn-sm' onclick='return myFunction()'><i class='bi bi-trash'></i></a></div>";
+                    class='btn btn-danger btn-sm' onclick='return myFunction()'>
+                    <i class='bi bi-trash'></i></a></div>";
                 }
                 echo "</td></tr>";
             }
